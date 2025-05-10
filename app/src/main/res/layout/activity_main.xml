@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <!-- Sonuç ekranı -->
+    <TextView
+        android:id="@+id/textResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="36sp"
+        android:gravity="end"
+        android:padding="16dp"
+        android:background="#DDDDDD" />
+
+    <!-- Tuş Takımı -->
+    <GridLayout
+        android:id="@+id/keypad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:rowCount="5"
+        android:layout_marginTop="24dp">
+
+        <Button android:id="@+id/btn1" android:text="1" />
+        <Button android:id="@+id/btn2" android:text="2" />
+
+        <Button
+            android:id="@+id/btn3"
+            android:text="3"
+            android:textColorLink="?android:attr/colorActivatedHighlight" />
+
+        <Button android:id="@+id/btn4" android:text="4" />
+        <Button android:id="@+id/btn5" android:text="5" />
+        <Button android:id="@+id/btn6" android:text="6" />
+
+        <Button android:id="@+id/btn7" android:text="7" />
+        <Button android:id="@+id/btn8" android:text="8" />
+        <Button android:id="@+id/btn9" android:text="9" />
+
+        <Button android:id="@+id/btnC" android:text="C" />
+        <Button android:id="@+id/btn0" android:text="0" />
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:text="+"
+            android:textColorLink="?android:attr/colorEdgeEffect" />
+
+        <Button
+            android:id="@+id/btnEqual"
+            android:text="="
+            android:layout_columnSpan="3"
+            android:layout_width="match_parent" />
+    </GridLayout>
+</LinearLayout>
